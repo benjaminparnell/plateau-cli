@@ -23,7 +23,7 @@ if (firstRun()) {
 
   upload(fileStream)
     .then((res) => {
-      console.log(chalk.green(figures.tick, chalk.white(res.body)))
+      console.log(res.body)
     })
     .catch((err) => {
       console.log(chalk.red(figures.cross, chalk.white(err.message)))
